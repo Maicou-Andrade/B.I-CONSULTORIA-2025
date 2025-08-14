@@ -24,8 +24,13 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#solucoes">Soluções</a></li>
                     <li><a href="#recursos">Dashboards</a></li>
-                    <li><a href="#integracao">ERP Consinco</a></li>
-                    <li><a href="#integracao">ERP CISS</a></li>
+                    <li class="dropdown">
+                        <a href="#sistemas-homologados">Sistemas Homologados <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.totvs.com/varejo/supermercados/" target="_blank">TOTVS</a></li>
+                            <li><a href="https://ciss.com.br/" target="_blank">CISS</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
@@ -276,35 +281,66 @@
     <section id="cases" class="testimonials">
         <div class="container">
             <div class="section-header">
-                <h2>Cases de Sucesso</h2>
-                <p>O que nossos clientes dizem sobre nossas soluções</p>
+                <h2>Palavra do CEO</h2>
+                <p>Conheça a visão e trajetória de quem lidera a MS Consultoria B.I</p>
             </div>
-            <div class="testimonials-slider">
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"Após implementar o BI integrado ao nosso ERP Consinco, conseguimos reduzir em 15% as perdas de estoque e aumentar nossa margem em 8% em apenas 3 meses."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <!-- Foto do cliente 1 -->
-                         <img src="images/compras.png" alt="Cliente" class="author-img">
-                        <div class="author-info">
-                            <h4>Carlos Silva</h4>
-                            <p>Diretor Comercial, Supermercados ABC</p>
+            <div class="ceo-carousel">
+                <div class="carousel-container-ceo">
+                    <div class="carousel-slides-ceo">
+                        <!-- Slide 1: Comentário Pessoal -->
+                        <div class="ceo-slide active">
+                            <div class="ceo-content">
+                                <div class="ceo-photo">
+                                    <img src="images/maicou-andrade.svg" alt="Maicou Andrade - CEO" class="ceo-img">
+                                </div>
+                                <div class="ceo-text">
+                                    <h3>Comentário de Maicou Andrade</h3>
+                                    <h4>CEO da MS Consultoria B.I e MS Consultoria</h4>
+                                    <blockquote>
+                                        <p>"Sempre vi empresas perderem tempo e dinheiro por depender de terceiros para gerar relatórios. Muitas vezes, o documento chegava errado, incompleto ou desatualizado. Já presenciei equipes passarem horas buscando informações em vários sistemas para montar algo que poderia estar pronto em segundos.</p>
+                                        <p>Foi por isso que criamos o nosso B.I. Ele elimina todo esse desgaste, oferecendo dados confiáveis e atualizados em tempo real, sem depender de ninguém. Assim, você pode usar esse tempo para tomar decisões estratégicas que realmente movem o negócio ou até mesmo para aproveitar momentos com quem você ama.</p>
+                                        <p><strong>Na MS Consultoria B.I acreditamos que informação certa, no momento certo, muda tudo.</strong>"</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2: Trajetória -->
+                        <div class="ceo-slide">
+                            <div class="ceo-content">
+                                <div class="ceo-photo">
+                                    <img src="images/maicou-andrade.svg" alt="Maicou Andrade - CEO" class="ceo-img">
+                                </div>
+                                <div class="ceo-text">
+                                    <h3>Minha Trajetória</h3>
+                                    <h4>Profissional com visão completa e integrada</h4>
+                                    <div class="trajectory-content">
+                                        <p>Não entregamos apenas um B.I. e não oferecemos apenas conhecimento de gestão. Unimos experiência prática de quem vive o dia a dia empresarial com domínio profundo de tecnologia, banco de dados e impacto real das informações no negócio.</p>
+                                        
+                                        <p>Atuo como gestor de uma das maiores redes de supermercados do Rio Grande do Norte, com faturamento anual de 1 bilhão de reais, liderando a área de tecnologia e conduzindo projetos que transformam dados em decisões estratégicas.</p>
+                                        
+                                        <p>Nosso B.I. inteligente integra finanças (DRE, fluxo de caixa), operações, vendas e performance de equipes, conectando sistemas como CRM, WMS e e-commerce em uma visão única e estratégica do negócio.</p>
+                                        
+                                        <p><strong>Na MS Consultoria B.I, transformamos dados em vantagem competitiva.</strong></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"A visibilidade que ganhamos com os dashboards de BI transformou nossa operação. Agora tomamos decisões baseadas em dados reais e não em intuição."</p>
+                
+                <!-- Controles do Carrossel -->
+                <div class="carousel-controls">
+                    <button class="carousel-btn-ceo prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
                     </div>
-                    <div class="testimonial-author">
-                        <!-- Foto do cliente 2 -->
-                         <img src="images/venda-hora.png" alt="Cliente" class="author-img">
-                        <div class="author-info">
-                            <h4>Ana Oliveira</h4>
-                            <p>CEO, Rede de Farmácias XYZ</p>
-                        </div>
-                    </div>
+                    <button class="carousel-btn-ceo next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </div>

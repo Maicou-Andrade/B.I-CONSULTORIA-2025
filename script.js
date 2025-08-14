@@ -258,4 +258,59 @@ document.addEventListener('DOMContentLoaded', function() {
         prevButton.addEventListener('click', () => goToSlide(currentSlide - 1));
         nextButton.addEventListener('click', () => goToSlide(currentSlide + 1));
     }
+    
+    // CEO Carousel functionality
+    const ceoCarousel = document.querySelector('.carousel-slides-ceo');
+    const ceoSlides = document.querySelectorAll('.ceo-slide');
+    const ceoIndicators = document.querySelectorAll('.indicator');
+    const ceoPrevBtn = document.querySelector('.carousel-btn-ceo.prev');
+    const ceoNextBtn = document.querySelector('.carousel-btn-ceo.next');
+    
+    if (ceoCarousel && ceoSlides.length > 0) {
+        let currentCeoSlide = 0;
+        
+        function showCeoSlide(index) {
+            // Atualizar posição do carrossel
+            ceoCarousel.style.transform = `translateX(-${index * 100}%)`;
+            
+            // Atualizar indicadores
+            ceoIndicators.forEach((indicator, i) => {
+                indicator.classList.toggle('active', i === index);
+            });
+            
+            currentCeoSlide = index;
+        }
+        
+        function nextCeoSlide() {
+            const nextIndex = (currentCeoSlide + 1) % ceoSlides.length;
+            showCeoSlide(nextIndex);
+        }
+        
+        function prevCeoSlide() {
+            const prevIndex = (currentCeoSlide - 1 + ceoSlides.length) % ceoSlides.length;
+            showCeoSlide(prevIndex);
+        }
+        
+        // Event listeners para botões de navegação
+        if (ceoNextBtn) {
+            ceoNextBtn.addEventListener('click', nextCeoSlide);
+        }
+        
+        if (ceoPrevBtn) {
+            ceoPrevBtn.addEventListener('click', prevCeoSlide);
+        }
+        
+        // Event listeners para indicadores
+        ceoIndicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                showCeoSlide(index);
+            });
+        });
+        
+        // Inicializar carrossel
+        showCeoSlide(0);
+        
+        // Auto-play opcional (descomente se desejar)
+        // setInterval(nextCeoSlide, 8000);
+    }
 });
