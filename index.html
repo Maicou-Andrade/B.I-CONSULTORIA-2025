@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Consultoria - BI Integrado ERP CISS / Consinco - Soluções Inteligentes para Varejo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <!-- Substitua pelo seu logo personalizado -->
+                <img src="images/logo.png" alt="Logo da MS Consultoria" class="company-logo">
+                <!-- Ou use o texto abaixo se preferir -->
+                <!-- <h1>BI<span>Expert</span></h1> -->
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="#recursos">Dashboards</a></li>
+                    <li><a href="#integracao">ERP Consinco</a></li>
+                    <li><a href="#integracao">ERP CISS</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="cta-button">
+                <a href="#demo" class="btn">Solicitar Demonstração</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transforme Dados em Decisões Lucrativas</h1>
+                <h2>Consultoria especializada em BI para ERP Consinco e ERP CISS</h2>
+                <p>Dashboards inteligentes que revelam onde sua empresa ganha ou perde dinheiro. Especialistas em Business Intelligence para o varejo, com foco total em ERPs Consinco e CISS.</p>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-primary">Ver Demonstração</a>
+                    <a href="#contato" class="btn btn-secondary">Fale com um especialista</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Carrossel de imagens dos dashboards -->
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide active">
+                                <img src="images/painel-controle-geral.png" alt="Painel de Controle Geral" class="dashboard-preview">
+                                <div class="slide-caption">Painel de Controle Geral</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/faturamento-tipo.png" alt="Análise de Faturamento por Tipo" class="dashboard-preview">
+                                <div class="slide-caption">Análise de Faturamento por Tipo</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/candidato-a-falta.png" alt="Candidatos à Falta" class="dashboard-preview">
+                                <div class="slide-caption">Candidatos à Falta</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/meta-comprador.png" alt="Metas por Comprador" class="dashboard-preview">
+                                <div class="slide-caption">Metas por Comprador</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/estoque.png" alt="Gestão de Estoque" class="dashboard-preview">
+                                <div class="slide-caption">Gestão de Estoque</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/compras.png" alt="Análise de Compras" class="dashboard-preview">
+                                <div class="slide-caption">Análise de Compras</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/venda-hora.png" alt="Vendas por Hora" class="dashboard-preview">
+                                <div class="slide-caption">Vendas por Hora</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/evolucao-periodo.png" alt="Evolução por Período" class="dashboard-preview">
+                                <div class="slide-caption">Evolução por Período</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/margem-faturamento.png" alt="Margem de Faturamento" class="dashboard-preview">
+                                <div class="slide-caption">Margem de Faturamento</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/controle-perdas.png" alt="Controle de Perdas" class="dashboard-preview">
+                                <div class="slide-caption">Controle de Perdas</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-prev" onclick="previousSlide()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn carousel-next" onclick="nextSlide()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="carousel-indicators">
+                        <span class="indicator active" onclick="currentSlide(1)"></span>
+                        <span class="indicator" onclick="currentSlide(2)"></span>
+                        <span class="indicator" onclick="currentSlide(3)"></span>
+                        <span class="indicator" onclick="currentSlide(4)"></span>
+                        <span class="indicator" onclick="currentSlide(5)"></span>
+                        <span class="indicator" onclick="currentSlide(6)"></span>
+                        <span class="indicator" onclick="currentSlide(7)"></span>
+                        <span class="indicator" onclick="currentSlide(8)"></span>
+                        <span class="indicator" onclick="currentSlide(9)"></span>
+                        <span class="indicator" onclick="currentSlide(10)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solucoes" class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que Podemos Fazer Pelo Seu Negócio</h2>
+                <p>Dashboards inteligentes que transformam dados complexos em insights acionáveis para o varejo</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-image">
+                        <!-- Imagem do Painel de Controle Geral -->
+                        <img src="images/painel-controle-geral.png" alt="Painel de Controle Geral" class="solution-img">
+                    </div>
+                    <h3>Painel de Controle Geral</h3>
+                    <p>VOCÊ NO COMANDO: TODA A EMPRESA NA PALMA DA SUA MÃO</p>
+                    <p class="solution-description">Visualize em tempo real faturamento, margem, ticket médio e performance por grupo, marca e comprador. Um cockpit executivo para decisões rápidas e assertivas.</p>
+                    <div class="solution-benefit">
+                        <strong>Gatilho de Vendas:</strong> Sem esse BI, você descobre problemas no fechamento do mês. Com ele, você antecipa e corrige no mesmo dia.
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-image">
+                        <!-- Imagem de Margem e Faturamento -->
+                        <img src="images/margem-faturamento.png" alt="Margem e Faturamento Detalhado" class="solution-img">
+                    </div>
+                    <h3>Margem e Faturamento Detalhado</h3>
+                    <p>DESCUBRA ONDE SUA MARGEM É GANHA OU PERDIDA</p>
+                    <p class="solution-description">Analise a performance por filial, comprador, divisão e marca, identificando de forma clara onde investir e onde agir para aumentar rentabilidade.</p>
+                    <div class="solution-benefit">
+                        <strong>Gatilho de Vendas:</strong> O que não é medido não pode ser melhorado. Essa tela revela o mapa para proteger e aumentar sua margem.
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-image">
+                        <!-- Imagem de Gestão de Estoque -->
+                        <img src="images/gestao-estoque.png" alt="Gestão de Estoque e Compras" class="solution-img">
+                    </div>
+                    <h3>Gestão de Estoque e Compras</h3>
+                    <p>ESTOQUE CERTO, NA HORA CERTA, PELO CUSTO CERTO</p>
+                    <p class="solution-description">Controle cobertura, excesso e custo de estoque. Enxergue exatamente onde há capital parado e onde é preciso repor para garantir giro saudável.</p>
+                    <div class="solution-benefit">
+                        <strong>Gatilho de Vendas:</strong> Dinheiro parado em estoque é lucro que não acontece. Essa visão evita desperdícios e rupturas.
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-image">
+                        <!-- Imagem de Controle de Perdas -->
+                        <img src="images/controle-perdas.png" alt="Controle de Perdas" class="solution-img">
+                    </div>
+                    <h3>Controle de Perdas</h3>
+                    <p>PERDAS SOB CONTROLE, LUCRO NO BOLSO</p>
+                    <p class="solution-description">Identifique perdas por filial, comprador, operação, seção ou fornecedor. Descubra pontos críticos e corrija rapidamente para proteger o resultado.</p>
+                    <div class="solution-benefit">
+                        <strong>Gatilho de Vendas:</strong> Cada real perdido é margem que desaparece. Essa tela garante que você saiba onde agir.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recursos" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Veja o Poder dos Nossos Dashboards</h2>
+                <p>Cada tela revela oportunidades de lucro que você ainda não enxergou</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <!-- Imagem de Produtividade por Operador -->
+                        <img src="images/produtividade-operador.png" alt="Produtividade por Operador" class="feature-img">
+                    </div>
+                    <h3>Produtividade por Operador</h3>
+                    <p><strong>"Acompanhe cada checkout em tempo real"</strong></p>
+                    <p>Monitore a produtividade individual de operadores de caixa: vendas, tickets, cancelamentos e liberação de descontos, comparando entre lojas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <!-- Imagem de Análise de Vendas por Tipo de Cliente -->
+                        <img src="images/faturamento-tipo.png" alt="Análise de Vendas por Tipo de Cliente" class="feature-img">
+                    </div>
+                    <h3>Análise de Vendas por Tipo de Cliente</h3>
+                    <p>Visualize ticket médio, volume e valor de cupons por tipo de cliente. Segmente e direcione promoções de forma estratégica.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <!-- Imagem de Ruptura e Candidatos à Falta -->
+                        <img src="images/candidato-a-falta.png" alt="Ruptura e Candidatos à Falta" class="feature-img">
+                    </div>
+                    <h3>Ruptura e Candidatos à Falta</h3>
+                    <p><strong>"Nunca mais perca vendas por falta de estoque"</strong></p>
+                    <p>Antecipe rupturas identificando produtos críticos por departamento, comprador, marca e filial, garantindo abastecimento constante.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <!-- Imagem de Metas e Resultados -->
+                        <img src="images/meta-comprador.png" alt="Metas e Resultados" class="feature-img">
+                    </div>
+                    <h3>Metas e Resultados</h3>
+                    <p><strong>"Transforme metas em conquistas visíveis"</strong></p>
+                    <p>Acompanhe em tempo real o atingimento de metas por comprador, loja e produto. Ajuste a estratégia rapidamente para garantir sucesso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="integracao" class="integration">
+        <div class="container">
+            <div class="integration-content">
+                <h2>Integração Perfeita com ERPs</h2>
+                <p>Nossa solução de BI foi desenvolvida especificamente para integrar com os ERPs Consinco e CISS, garantindo:</p>
+                <ul class="integration-benefits">
+                    <li><i class="fas fa-check-circle"></i> Extração automática de dados</li>
+                    <li><i class="fas fa-check-circle"></i> Atualização em tempo real</li>
+                    <li><i class="fas fa-check-circle"></i> Implementação rápida e sem complicações</li>
+                    <li><i class="fas fa-check-circle"></i> Dashboards personalizados para seu negócio</li>
+                    <li><i class="fas fa-check-circle"></i> Suporte técnico especializado</li>
+                </ul>
+                <a href="#contato" class="btn btn-primary">Saiba mais sobre integração</a>
+            </div>
+            <div class="integration-image">
+                <!-- Imagem de Integração -->
+                <img src="images/estoque.png" alt="Integração com ERPs" class="integration-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="diferenciais" class="differentials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Por Que Escolher Nossa Consultoria</h2>
+                <p>Experiência comprovada e resultados garantidos no varejo</p>
+            </div>
+            <div class="differentials-grid">
+                <div class="differential-item">
+                    <i class="fas fa-award"></i>
+                    <h3>Experiência comprovada no varejo</h3>
+                    <p>Anos de experiência implementando soluções de BI especificamente para o setor varejista</p>
+                </div>
+                <div class="differential-item">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Especialistas em Consinco e CISS</h3>
+                    <p>Conhecimento profundo dos ERPs mais utilizados no varejo brasileiro</p>
+                </div>
+                <div class="differential-item">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Implementação rápida e segura</h3>
+                    <p>Metodologia testada que garante resultados em tempo recorde</p>
+                </div>
+                <div class="differential-item">
+                    <i class="fas fa-headset"></i>
+                    <h3>Suporte contínuo e personalizado</h3>
+                    <p>Acompanhamento dedicado para garantir o máximo aproveitamento da solução</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cases" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cases de Sucesso</h2>
+                <p>O que nossos clientes dizem sobre nossas soluções</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Após implementar o BI integrado ao nosso ERP Consinco, conseguimos reduzir em 15% as perdas de estoque e aumentar nossa margem em 8% em apenas 3 meses."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <!-- Foto do cliente 1 -->
+                         <img src="images/compras.png" alt="Cliente" class="author-img">
+                        <div class="author-info">
+                            <h4>Carlos Silva</h4>
+                            <p>Diretor Comercial, Supermercados ABC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"A visibilidade que ganhamos com os dashboards de BI transformou nossa operação. Agora tomamos decisões baseadas em dados reais e não em intuição."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <!-- Foto do cliente 2 -->
+                         <img src="images/venda-hora.png" alt="Cliente" class="author-img">
+                        <div class="author-info">
+                            <h4>Ana Oliveira</h4>
+                            <p>CEO, Rede de Farmácias XYZ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para transformar dados em resultados?</h2>
+                <p>Solicite uma demonstração gratuita e veja como nosso BI pode impulsionar seu negócio.</p>
+                <a href="#contato" class="btn btn-large">Solicitar Demonstração</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Estamos prontos para ajudar seu negócio a crescer</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <h4>Consultor</h4>
+                            <p>Maicou Santos Andrade</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Ozório Augusto de Oliveira, 985<br>Pau dos Ferros - RN</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Celular</h4>
+                            <p>(46) 9 9112-4141</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>maicouandrade@msconsultoria.net.br</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://linkedin.com/in/msconsultoria" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://facebook.com/msconsultoria" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/msconsultoria" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5546991124141" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Telefone">
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option value="" disabled selected>Qual ERP você utiliza?</option>
+                                <option value="consinco">Consinco</option>
+                                <option value="ciss">CISS</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar Mensagem para Maicou</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <!-- Logo no rodapé - use a mesma logo do cabeçalho -->
+                    <img src="images/logo.png" alt="Logo da MS Consultoria" class="footer-logo-img">
+                    <p>PERTO DE QUEM VAI LONGE</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Links Rápidos</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#solucoes">Soluções</a></li>
+                            <li><a href="#recursos">Recursos</a></li>
+                            <li><a href="#cases">Cases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Soluções</h3>
+                        <ul>
+                            <li><a href="#">BI para Consinco</a></li>
+                            <li><a href="#">BI para CISS</a></li>
+                            <li><a href="#">Consultoria em BI</a></li>
+                            <li><a href="#">Treinamentos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Suporte</h3>
+                        <ul>
+                            <li><a href="#">Central de Ajuda</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Documentação</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 BIExpert. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
